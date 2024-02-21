@@ -9,7 +9,7 @@ import java.awt.event.*;
 /**
  * A simple class to compute basic, descriptive statistics.
  */
-public class BasicStats {
+public class BasicStats{
 
   // Store all collected numbers
   private static ArrayList<Double> data = new ArrayList<Double>();
@@ -31,13 +31,18 @@ public class BasicStats {
     NumbersView numbersView = new NumbersView();
     AddNumView addNumView = new AddNumView();
     ResetView resetView = new ResetView();
+    MinView minView = new MinView();
+    MaxView maxView = new MaxView();
 
     //Create statsView
     ArrayList<View> statsViews = new ArrayList<View>();
+    
     statsViews.add(countView);
     statsViews.add(medianView);
     statsViews.add(meanView);
     statsViews.add(modeView);
+    statsViews.add(minView);
+    statsViews.add(maxView);
 
     /***** REGISTER MVC BLOCK *****/
 
