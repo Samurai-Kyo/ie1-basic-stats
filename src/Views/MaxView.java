@@ -23,7 +23,7 @@ public class MaxView implements View {
 
 	@Override
 	public void update(ArrayList<Double> numbers) {
-		max = MinMaxCalculations.max(BasicStats.getArrayDouble(numbers));
+		max = MinMaxCalculation.max(BasicStats.getArrayDouble(numbers));
 
 		//Set text
 		jtfMax.setText("" + max);

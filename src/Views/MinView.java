@@ -23,7 +23,7 @@ public class MinView implements View {
 
 	@Override
 	public void update(ArrayList<Double> numbers) {
-		min = MinMaxCalculations.min(BasicStats.getArrayDouble(numbers));
+		min = MinMaxCalculation.min(BasicStats.getArrayDouble(numbers));
 
 		//Set text
 		jtfMin.setText("" + min);
